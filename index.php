@@ -1,2 +1,0 @@
-<center><h1>hello</h1</center>
-
