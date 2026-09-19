@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>کارت دعوت عروسی</title>
-  <style>
-    body {
-      font-family: Tahoma, sans-serif;
-      background: linear-gradient(135deg, #f9e7e7, #fce4ec);
-      text-align: center;
-      padding: 50px;
-      color: #333;
-    }
-    h1 { color: #c2185b; font-size: 40px; }
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>دعوت‌نامه عروسی</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>💍 دعوت به عروسی 💍</h1>
-    <p>با کمال مسرت شما را به جشن عروسی‌مان دعوت می‌کنیم</p>
-    <p><strong>تاریخ:</strong> ۱۵ مهر ۱۴۰۵</p>
-    <p><strong>مکان:</strong> تالار ...</p>
-  </div>
+
+<!-- ====== ویدیو معرفی (Intro) ====== -->
+<div class="intro-overlay" id="introOverlay">
+    <video id="introVideo" playsinline preload="auto">
+        <source src="media/intro.mp4" type="video/mp4">
+    </video>
+
+    <!-- دکمه شروع روی ویدیو -->
+    <div class="intro-start" id="introStart">
+        <div class="play-icon">▶</div>
+        <p>برای شروع کلیک کنید</p>
+    </div>
+</div>
+
+<!-- ====== محتوای اصلی سایت ====== -->
+<div class="main-content" id="mainContent">
+
+    <div class="scroll-container">
+
+        <!-- صفحه اول -->
+        <section class="slide">
+            <div class="content">
+                <p class="small-text">دعوت‌نامه عروسی</p>
+                <h1 class="names">علی & زهرا</h1>
+                <p class="date">۱۵ مهر ۱۴۰۴</p>
+            </div>
+        </section>
+
+        <!-- صفحه دوم -->
+        <section class="slide">
+            <div class="content">
+                <p class="small-text">با احترام</p>
+                <h2>به جشن عروسی ما خوش آمدید</h2>
+                <p>حضور گرم شما باعث افتخار ماست</p>
+            </div>
+        </section>
+
+        <!-- صفحه سوم -->
+        <section class="slide">
+            <div class="content">
+                <p class="small-text">جزئیات مراسم</p>
+                <h2>تالار بهشت</h2>
+                <p>ساعت ۱۹ الی ۲۳</p>
+            </div>
+        </section>
+
+        <!-- صفحه چهارم -->
+        <section class="slide">
+            <div class="content">
+                <p class="small-text">منتظر شما هستیم</p>
+                <h2>با تشکر</h2>
+                <p>خانواده‌های عروس و داماد</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- راهنمای اسکرول -->
+    <div class="scroll-hint" id="scrollHint">
+        <span>اسکرول کن</span>
+        <div class="arrow">▼</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
